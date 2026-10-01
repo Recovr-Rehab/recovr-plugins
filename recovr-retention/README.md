@@ -80,8 +80,13 @@ codex plugin add recovr-retention@recovr
 
 ## Support
 
+- Setup guide: https://retention.recovr.com/mcp
 - Email: [support@recovr.com](mailto:support@recovr.com)
 - Help centre: https://support.recovr.com
 - Privacy policy: https://retention.recovr.com/privacy
 - Terms: https://retention.recovr.com/terms
 - Sub-processors: https://retention.recovr.com/subprocessors
+
+## Licence
+
+Proprietary. See [LICENSE](LICENSE). © Recovr Pty Ltd.

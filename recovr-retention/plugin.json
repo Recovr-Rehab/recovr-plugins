@@ -8,7 +8,7 @@
     "email": "support@recovr.com",
     "url": "https://recovr.com"
   },
-  "homepage": "https://retention.recovr.com",
+  "homepage": "https://retention.recovr.com/mcp",
   "license": "UNLICENSED",
   "keywords": [
     "gym",
@@ -30,7 +30,7 @@
           "read",
           "write"
         ],
-        "websiteURL": "https://retention.recovr.com",
+        "websiteURL": "https://retention.recovr.com/mcp",
         "privacyPolicyURL": "https://retention.recovr.com/privacy",
         "termsOfServiceURL": "https://retention.recovr.com/terms",
         "defaultPrompt": [
