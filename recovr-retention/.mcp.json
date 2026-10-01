@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "recovr": {
+      "type": "http",
+      "url": "https://retention-backend.recovr.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "recovr-retention",
+  "version": "1.4.0",
+  "description": "Find gym members at risk of cancelling, read their attendance, packages and message history, and act on them — flag, snooze, assign, draft and send outreach.",
+  "author": {
+    "name": "Recovr Pty Ltd",
+    "email": "support@recovr.com",
+    "url": "https://recovr.com"
+  },
+  "homepage": "https://retention.recovr.com",
+  "license": "UNLICENSED",
+  "keywords": [
+    "gym",
+    "fitness",
+    "retention",
+    "churn",
+    "membership",
+    "crm"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Recovr Retention",
+        "shortDescription": "Stop gym members cancelling.",
+        "longDescription": "Recovr is a client-retention platform for gyms and fitness studios. Gyms connect their booking platform (Mindbody, Hapana, Clubworx, Momence and others) and Recovr syncs that data into its own database with the gym's authorisation, then scores every member on how likely they are to cancel.\n\nWith this connector you can ask for the members who are slipping away, read why — attendance, packages, billing and past conversations — and then do something about it: flag someone for follow-up, snooze them, assign them to a staff member, log a call that happened offline, or draft and send an SMS or email.\n\nRecovr is the system of record here, not a proxy. These tools read Recovr's own database; they do not relay queries to any third-party booking API. Everything is scoped to the single gym location the authenticated staff member belongs to.\n\nA member's 'health score' measures their engagement with the gym — how likely they are to cancel their membership, derived from attendance and billing patterns. It is not medical or health information about the person.",
+        "developerName": "Recovr Pty Ltd",
+        "category": "productivity",
+        "capabilities": [
+          "read",
+          "write"
+        ],
+        "websiteURL": "https://retention.recovr.com",
+        "privacyPolicyURL": "https://retention.recovr.com/privacy",
+        "termsOfServiceURL": "https://retention.recovr.com/terms",
+        "defaultPrompt": [
+          "Which members are at high risk of cancelling this week?",
+          "Why is this member's health score dropping?",
+          "Draft a check-in message for the members who haven't attended in a fortnight."
+        ],
+        "brandColor": "#586D39",
+        "composerIcon": "./assets/composer-icon.png",
+        "logo": "./assets/logo.png",
+        "supportURL": "https://support.recovr.com"
+      }
+    }
+  },
+  "repository": "https://github.com/Recovr-Rehab/recovr-plugins"
+}

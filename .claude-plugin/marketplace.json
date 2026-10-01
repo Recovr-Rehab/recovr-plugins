@@ -1,0 +1,15 @@
+{
+  "name": "recovr",
+  "owner": {
+    "name": "Recovr",
+    "email": "support@recovr.com"
+  },
+  "plugins": [
+    {
+      "name": "recovr-retention",
+      "source": "./recovr-retention",
+      "description": "Find gym members at risk of cancelling, read their attendance and conversations, and act on them from Claude."
+    }
+  ],
+  "description": "Recovr plugins for Claude: gym client-retention workflows backed by your Recovr account."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "recovr-retention",
+  "description": "Query and act on your gym's client retention data from Claude — find members at risk of cancelling, read their attendance and conversations, and draft outreach.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Recovr",
+    "url": "https://recovr.com"
+  },
+  "homepage": "https://recovr.com",
+  "repository": "https://github.com/Recovr-Rehab/recovr-plugins",
+  "license": "MIT"
+}
