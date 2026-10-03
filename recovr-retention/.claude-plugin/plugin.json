@@ -1,9 +1,9 @@
 {
   "name": "recovr-retention",
-  "description": "Query and act on your gym's client retention data from Claude — find members at risk of cancelling, read their attendance and conversations, and draft outreach.",
-  "version": "0.1.0",
+  "description": "Use Recovr member data, analytics, conversations and follow-up tools with practical MCP usage guides.",
+  "version": "1.4.9",
   "author": {
-    "name": "Recovr",
+    "name": "Recovr Pty Ltd",
     "url": "https://recovr.com"
   },
   "homepage": "https://retention.recovr.com/mcp",
