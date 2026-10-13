@@ -1,7 +1,8 @@
 {
   "name": "recovr-retention",
-  "description": "Use Recovr member data, analytics, conversations and follow-up tools with practical MCP usage guides.",
-  "version": "1.4.9",
+  "displayName": "Recovr",
+  "description": "Help gym and studio teams spot member disengagement early, understand the evidence, and plan personal follow-up using their existing Recovr data.",
+  "version": "1.4.10",
   "author": {
     "name": "Recovr Pty Ltd",
     "url": "https://recovr.com"
