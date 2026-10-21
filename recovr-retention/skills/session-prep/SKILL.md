@@ -24,7 +24,7 @@ Use `recovr_get_attendance` with `view: "session_report"`.
 - "Next class", "tonight", "this afternoon": omit `date` and use the returned `studio_time_now` to keep only classes still to start.
 - "Tomorrow": the day after `studio_today`, as `date`.
 - A time the user names: pass `session_time` as they said it ("6am").
-- If `clients_not_shown` is above zero for a class, call again for that class (`session_time` or `session_name`) until every booked member is listed.
+- If `clients_not_shown` is above zero for a class, call once more for just that class (`session_time` or `session_name`). If members are still not shown, list who you have and say how many are missing.
 
 ## 2. Build each line
 

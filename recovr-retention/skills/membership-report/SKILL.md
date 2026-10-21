@@ -34,8 +34,8 @@ Lead with one table, then a short note per caveat:
 ```
 Membership report, September 2026 (memberships only; today is 21 Oct)
 
-Active members today   212   memberships 188, other current packages 24
-                             (incl. staff/$0 9, hidden from reports 13)
+Active members today   212   all current packages; on a membership: 188
+                             (the 212 includes staff/$0 9, hidden from reports 13)
 Not counted, for context      suspended 9, pending 6
 Joins                   14   first membership purchased in September
 Cancellations           11   processed in September (by cancellation date)

@@ -17,7 +17,7 @@ Query `churn_rate` with `starting_members`, `churned_members`, `pending_churn_me
 
 - Closed month with a rate: "August churn was 2.6%: 7 of 270 memberships ended (3 unverified)."
 - Open month: "September is provisional: 5 exits so far from 268 at the start of the month. The rate firms up 30 days after month end."
-- Too many unverified: "October's rate isn't established: 41 of 266 exits couldn't be verified from synced data, which is above the 5% Recovr needs. That points to a sync gap; support can check it."
+- Too many unverified: "August's rate isn't established: 41 members need review against 266 at the start of the month (15%), above the 5% Recovr allows. Recovr couldn't confirm those exits from the synced data; support can look into why."
 
 ## Never
 

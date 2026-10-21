@@ -35,7 +35,7 @@ Possible reasons: none recorded. No messages from the gym since August.
 - Zero remaining sessions on an unlimited membership doesn't mean it ran out. A next billing date is not the end of a recurring membership; Australian memberships often bill weekly or fortnightly.
 - Tenure counts from when they started, not from the current billing cycle's purchase date.
 - Contact-log entries from the booking system or automations are not staff outreach. A snooze, a note or being assigned is not a message.
-- "New" means their first class here was less than 14 days ago.
+- "New" means their first class here was less than 14 days ago; with no class yet, their start date (or join date) was less than 14 days ago. Next Up's "New member" chip is a wider 30-day window.
 
 ## When staff say it's wrong
 

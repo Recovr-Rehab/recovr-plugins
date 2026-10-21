@@ -46,7 +46,7 @@ Copy this checklist and tick it off:
 **5. Sort, then read.** Put each person in one group:
 
 - **Never landed:** one or two visits ever. An onboarding check-in, not a "haven't seen you" message.
-- **Admin:** package expiring or expired while still attending. A renewal conversation.
+- **Admin:** a non-intro package genuinely ending (the `renewal` risk value: within 7 days of expiry) while they still attend. A renewal conversation. An expiry that is just a billing date on an auto-renewing membership, or one covered by a longer auto-renewing membership, is not a renewal. An ending intro package is conversion, and a New member's first pack running out is onboarding, not renewal.
 - **Lapsing:** an established member whose visits fell. The group this review exists for.
 
 For the 10 most urgent, read `recovr_get_client` `view: "details"` and `view: "timeline"` and their latest conversation. Find the specific reason, because the reason decides the message.
