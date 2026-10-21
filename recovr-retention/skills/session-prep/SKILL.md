@@ -12,7 +12,7 @@ A huddle sheet is read on a phone minutes before class. One line per member, onl
 
 - Start with `recovr_get_retention_summary` for the studio name, `studio_today` and timezone. "Today", "tomorrow" and "last month" mean the studio's calendar days.
 - Act only on ids a tool returned in this conversation. When a name matches several people, ask which one.
-- A failed read is not zero or an empty list. Quote the error, say what couldn't be read, and never guess a cause. When data looks wrong, say Recovr's sync may be behind and offer https://support.recovr.com, rather than sending the gym to fix their booking system.
+- A failed read is not zero or an empty list. Quote the error, say what couldn't be read, and never guess a cause. When data looks wrong, say what Recovr holds, check whether a Recovr setting explains it, and otherwise treat it as a Recovr data problem and offer to report it to Recovr support. Never send the gym to fix or check their booking system.
 - Change records only when the user asks, and call a change done only after the tool reports success.
 - Outside this connection: booking classes, payments and refunds, bulk sending, and building Builder workflows, boards, forms or saved reports. Point to the Recovr app at https://retention.recovr.com. For "how do I…" questions about Recovr, use `recovr_search_help` and share only the links it returns; without that tool, point to https://support.recovr.com.
 <!-- ground-rules:end -->
@@ -66,4 +66,4 @@ When the gym gives its own template, follow its fields and order exactly.
 
 ## 4. After the sheet
 
-Offer to flag members or log a note (`recovr-follow-up`), or draft a welcome or milestone message (`recovr-messaging`). Lifetime visits can miss history from before the gym's data reached Recovr, and a missing coach name is a gap in synced data, not the gym's mistake.
+Offer to flag members or log a note (`recovr-follow-up`), or draft a welcome or milestone message (`recovr-messaging`). Lifetime visits can miss history from before the gym joined Recovr, and a missing coach name is a gap in Recovr's data, not the gym's mistake.

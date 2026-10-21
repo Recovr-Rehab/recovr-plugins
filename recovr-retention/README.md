@@ -9,7 +9,7 @@ Spot gym members at risk of cancelling, understand why, and plan personal follow
   - `weekly-at-risk-review`: who needs attention this week, why, and who should contact them.
   - `recovr-member-lookup`: one member's situation, risk and score history.
   - `member-list-builder`: complete member lists with the definition you choose, ready to export.
-  - `membership-report`: active members, joins, cancellations, churn and trials, with the parts behind each number.
+  - `membership-report`: active members, joins, cancellations, churn and trials, counted the way your package settings define them.
   - `timetable-review`: busiest and quietest classes, instructors, staffing hours, no-shows.
   - `session-prep`: a one-line-per-member huddle sheet for upcoming classes.
   - `recovr-messaging`: replies owed, drafts in your gym's voice, and sending only after you approve.

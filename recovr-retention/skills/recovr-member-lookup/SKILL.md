@@ -10,7 +10,7 @@ description: Looks up one gym member in Recovr and explains their situation. Use
 
 - Start with `recovr_get_retention_summary` for the studio name, `studio_today` and timezone. "Today", "tomorrow" and "last month" mean the studio's calendar days.
 - Act only on ids a tool returned in this conversation. When a name matches several people, ask which one.
-- A failed read is not zero or an empty list. Quote the error, say what couldn't be read, and never guess a cause. When data looks wrong, say Recovr's sync may be behind and offer https://support.recovr.com, rather than sending the gym to fix their booking system.
+- A failed read is not zero or an empty list. Quote the error, say what couldn't be read, and never guess a cause. When data looks wrong, say what Recovr holds, check whether a Recovr setting explains it, and otherwise treat it as a Recovr data problem and offer to report it to Recovr support. Never send the gym to fix or check their booking system.
 - Change records only when the user asks, and call a change done only after the tool reports success.
 - Outside this connection: booking classes, payments and refunds, bulk sending, and building Builder workflows, boards, forms or saved reports. Point to the Recovr app at https://retention.recovr.com. For "how do I…" questions about Recovr, use `recovr_search_help` and share only the links it returns; without that tool, point to https://support.recovr.com.
 <!-- ground-rules:end -->
@@ -39,6 +39,6 @@ Possible reasons: none recorded. No messages from the gym since August.
 
 ## When staff say it's wrong
 
-Staff usually know their member. Report exactly what Recovr holds and where it differs from what they said: lifetime visits can miss history from before the gym's data reached Recovr, pending or suspended memberships can show as not current, and synced data can lag the booking system. Say Recovr's data may be behind and offer https://support.recovr.com.
+Staff usually know their member, so treat a mismatch as Recovr's to fix. Say plainly what Recovr holds and where it differs from what they said. If a setting explains it, name the setting and link it: a package with no type, or one hidden from reports, in Settings → Packages (https://retention.recovr.com/settings/packages). A suspended or not-yet-started membership isn't current by definition, so say that in one sentence. Otherwise say Recovr has it wrong or is missing data, such as visits from before the gym joined Recovr. Offer to write it up for Recovr support at https://support.recovr.com with the member, what Recovr shows and what they expected. Never send them to check their booking system, and never defend the figure.
 
 Changes go through `recovr-follow-up`; messages through `recovr-messaging`.
