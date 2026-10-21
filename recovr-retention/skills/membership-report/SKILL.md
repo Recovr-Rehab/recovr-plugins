@@ -45,11 +45,11 @@ Churn, September         –   not established yet: 30-day return window still o
 Trials started          19   9 already on a membership (Oct to date: 8 started)
 ```
 
-- **Active members:** Active status and a current package of any type, whatever its classification or report setting. Use `members_breakdown` for what's counted (`by_package_type`, so the Membership line can sit under the total) and what's shown alongside (`suspended`, `pending_start`). Suspended and not-yet-started members are never part of the count, and Active-status records without a package (leads, lapsed) are not members. These are labelled numbers in their own right, not parts to add up against another system.
+- **Active members:** Active status and a current package of any type, whatever its classification or report setting. Use `members_breakdown` for what's counted (`by_package_type`, so the Membership line can sit under the total; it places each member once, by one current package, so it can differ from a `package_type` list) and what's shown alongside (`suspended`, `pending_start`). Suspended and not-yet-started members are never part of the count, and Active-status records without a package (leads, lapsed) are not members. These are labelled numbers in their own right, not parts to add up against another system.
 - **Joins:** first membership purchase, not when the record was created. Name the definition used.
 - **Cancellations:** processed (cancellation date) and scheduled (notice given) are separate lines. A current Cancelled status alone doesn't mean they left this month.
 - **Churn:** only from `MembershipChurn`. Read [references/churn.md](references/churn.md) before writing the churn line or answering "what does provisional mean?".
-- **Trials:** count packages the gym classified as Intro. Members whose package nobody classified (`by_package_type.unclassified`) are active members but in no type line; when there are any, say how many and that classifying those packages in Settings → Packages puts them in the right line. Someone holding an intro offer alongside a membership has already converted.
+- **Trials:** count packages the gym classified as Intro. Members whose package nobody classified sit in the `by_package_type.unclassified` line; when there are any, say how many and that classifying those packages in Settings → Packages puts them in a named line. Someone holding an intro offer alongside a membership has already converted.
 
 ## 4. When they want a different cut, or a number looks wrong
 

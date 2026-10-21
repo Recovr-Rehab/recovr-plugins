@@ -42,7 +42,7 @@ For how to express common cohorts (lapsed, coach's clients, packages bought, bir
 
 - Page through `recovr_find_clients`, passing each `next_offset` back as `offset`, until no `next_offset` comes back. Report "N of N" only when `total_is_exact` is true; otherwise report "N of at least M". If you stop early, say so and give the shortfall as a minimum, not an exact number.
 - When a part of the definition can't be filtered (for example $0 packages), say so, show how many rows it affects, and let the user decide.
-- When the list's count differs from `active_members` or a band count in `recovr_get_retention_summary`, say in one sentence what the list counts that the other doesn't, and name the setting behind it, for example: "Risk bands leave out packages hidden from reports; that's the Show in reports setting in Settings → Packages." Suspended and not-yet-started members are shown alongside the member count, never part of it.
+- When the list's count differs from `active_members` or a band count in `recovr_get_retention_summary`, say in one sentence what the list counts that the other doesn't, and name the setting behind it, for example: "Risk bands leave out members whose packages are all hidden from reports; that's the Show in reports setting in Settings → Packages." Suspended and not-yet-started members are shown alongside the member count, never part of it.
 
 ## 3. Return what they asked for
 

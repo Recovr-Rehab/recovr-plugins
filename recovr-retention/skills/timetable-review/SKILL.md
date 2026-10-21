@@ -30,7 +30,7 @@ Attendance questions start broad and get refined ("exclude weekends", "last 12 w
 - **Per class run.** Compare average attendance per run and show the number of runs. Totals favour classes that ran more often. Leave out one-off classes unless asked.
 - **Same weekday.** Compare a slot with the same slot on the same weekday. Read weekday names from the data.
 - **Instructors.** Some platforms don't send the instructor for every class. Report how many runs have no instructor and leave them out of instructor rankings; it is a gap in Recovr's data, not the gym's error. Rank an instructor only across the slots they actually teach.
-- **No-shows and late cancels.** Keep booked, attended, no-show, late-cancelled and cancelled separate. A no-show on a day the member attended another class is usually a class switch. Zero no-shows across a busy week can mean the platform didn't mark them; say so rather than reporting a perfect week.
+- **No-shows and late cancels.** Keep booked, attended, no-show, late-cancelled and cancelled separate. A no-show on a day the member attended another class is usually a class switch. Zero no-shows across a busy week means none are recorded in Recovr, not a perfect week; say that, and if it looks wrong, offer to report it to Recovr support.
 - **People vs visits.** Distinct people and class attendances are different counts; label which one each number is.
 - **Dates.** State the exact range. "Last 7 days" in analytics excludes today.
 

@@ -8,9 +8,9 @@ Both settings live in Settings → Packages: https://retention.recovr.com/settin
 
 | Setting on a package | What it changes |
 | --- | --- |
-| Type (Membership, Intro, Class pack, other) | Which line its holders count in (`members_breakdown.by_package_type`, `package_type` filters). Only Membership packages count toward churn, and only Intro packages count as trials. |
-| No type yet | Its holders are active members but in no type line, list filter or churn. Classifying it fixes all of those. |
-| Show in reports off | Its holders leave the risk bands and risk lists (dashboard, Clients page, Ask Recovr) and churn. They stay in the active member total. |
+| Type (Membership, Intro, Class pack, other) | Which `package_type` lists the package matches, and the `members_breakdown.by_package_type` line for members whose package it is. That line places each member once, by one current package, so a member holding two packages is in one line only. Only Membership packages can count toward churn, and only Intro packages count as trials. |
+| No type yet | The package matches no `package_type` filter, and members whose package it is sit in the `unclassified` line. Classifying it puts them in a named line. |
+| Show in reports off | The package stops counting toward the risk bands and risk lists (dashboard, Clients page, Ask Recovr) and churn. A member leaves the risk bands and lists only when none of their packages shows in reports. Everyone stays in the active member total. |
 
 The active member total counts everyone Active with a current package of any type. No setting takes a package out of it, so never promise one does.
 
@@ -22,7 +22,7 @@ Examples: memberships only, without staff or $0 packages, or including suspended
    - Memberships only: `by_package_type.membership`.
    - Including suspended: say "212 active members, plus 9 suspended", with each number labelled.
    - Other cuts: build them with `recovr_find_clients` the way member-list-builder does. Each row carries `shown_in_reports`.
-2. In one sentence, name the setting that would make this cut the default everywhere Recovr uses it, and link it. For example: "Your Staff package is classified as a Membership and shown in reports. Change its type and turn off Show in reports in Settings → Packages, and it drops out of your Membership line, churn and risk lists."
+2. In one sentence, name the setting that would make this cut the default everywhere Recovr uses it, and link it. For example: "Your Staff package is classified as a Membership and shown in reports. Change its type and turn off Show in reports in Settings → Packages, and staff who hold only that package leave your Membership line, churn and risk lists."
 3. If no setting gives that cut, say how Recovr defines the number in one sentence. Suspended members, for example, are on hold, so they're never counted as active. If the definition doesn't suit them, offer to pass that on to Recovr support as feedback. Never suggest adjusting the number by hand each time.
 
 ## A number or a named member looks wrong

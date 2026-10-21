@@ -5,7 +5,7 @@ How common staff requests map to Recovr. `recovr_find_clients` handles current-s
 | Staff ask | How |
 | --- | --- |
 | "Active but not in for two weeks" | `recovr_find_clients`: Active, current package, no attendance since `studio_today` minus 14 days. Members only, unless they say otherwise. |
-| "Memberships only, no trials or packs" | `package_type: ["membership"]` with Active status. Types come from the gym's own Settings → Packages (https://retention.recovr.com/settings/packages). A package with no type yet matches no type, so say how many members that leaves out (`members_breakdown.by_package_type.unclassified`) and that classifying it there adds them. |
+| "Memberships only, no trials or packs" | `package_type: ["membership"]` with Active status. Types come from the gym's own Settings → Packages (https://retention.recovr.com/settings/packages). A package with no type yet matches no type, so members holding only such packages are left out; say so, and that classifying the package there adds them. |
 | "Everyone on the 21-day jumpstart" | `package_names` with the package's name as Recovr lists it. Plain lists include members on packages hidden from reports; rows with `shown_in_reports: false` are those members, so mark them. |
 | "My coach's clients" | The assignment filters on `recovr_find_clients` (staff ids from `recovr_list_team_members`). If the schema can't narrow to one coach, say so rather than guessing. The coach who ran a session is a different thing, and some platforms don't send it. |
 | "Who did [staff] sell to" | `recovr_get_package_sales` for the period, or the `sold_by` filter. Without that tool, the sold-by recipe in `query_guide`. |
