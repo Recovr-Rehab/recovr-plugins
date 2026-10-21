@@ -31,7 +31,7 @@ Copy this checklist and tick it off:
 - [ ] 7. Offer to record decisions
 ```
 
-**1. Restate the review settings.** If the user has standing rules (labels to skip, their own band such as "medium under 60", a list size), restate them in one line at the top so next week's rerun is a single prompt. Frame the week from the summary's band counts, high risk first.
+**1. Restate the review settings.** If the user has standing rules (labels to skip, their own band such as "medium under 60", a list size), restate them in one line at the top so next week's rerun is a single prompt. Frame the week from the summary's band counts, high risk first. Bands cover only members on packages shown in reports, so they can add up to less than `active_members`.
 
 **2. Owed a reply.** `recovr_list_conversations` with `filter: "reply_owed"`. These members wrote and are waiting. Put them in their own section, first, and say they are owed an answer, not necessarily at risk.
 
@@ -39,7 +39,7 @@ Copy this checklist and tick it off:
 
 **4. Extra passes.** Run each; they catch people Next Up may not show.
 
-- **High risk:** `recovr_find_clients` with `risk: "high-risk"`, every page. Snoozed members are on this list: show them marked "Snoozed" and count them. Show assigned members with their coach; assigned is not the same as contacted.
+- **High risk:** `recovr_find_clients` with `risk: "high-risk"`, every page (`next_offset` → `offset`). Snoozed members are on this list: show them marked "Snoozed" and count them. Show assigned members with their coach; assigned is not the same as contacted.
 - **Fading medium:** `risk: "medium-risk"` members whose score fell over the last 2 to 4 weeks (`recovr_get_client` `view: "health_trajectory"`, or the score-history recipe in `recovr_describe_analytics_model`'s `query_guide`). About 25 at most, none already in the high-risk pass.
 - **First slip:** members who came regularly for the last couple of months and have no visit in the last 7 to 10 days (attended date filters on `recovr_find_clients`). The cheapest saves.
 

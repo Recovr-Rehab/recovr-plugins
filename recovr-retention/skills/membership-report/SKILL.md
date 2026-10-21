@@ -35,7 +35,8 @@ Lead with one table, then a short note per caveat:
 Membership report, September 2026 (memberships only; today is 21 Oct)
 
 Active members today   212   memberships 188, other current packages 24
-  alongside            suspended 9, pending 6, staff/$0 9, hidden from reports 4
+                             (incl. staff/$0 9, hidden from reports 13)
+Not counted, for context      suspended 9, pending 6
 Joins                   14   first membership purchased in September
 Cancellations           11   processed in September (by cancellation date)
 Scheduled to end         5   notice given, end dates in Oct–Nov
@@ -44,11 +45,11 @@ Churn, September         –   not established yet: 30-day return window still o
 Trials started          19   9 already on a membership
 ```
 
-- **Active members:** Active status and a current package. Show each part of `members_breakdown` as returned, and only present the parts as adding up to `active_members` when they do. Active-status records without a package (leads, lapsed) are not members; quote them only as a labelled second number.
+- **Active members:** Active status and a current package. Show each part of `members_breakdown` as returned. Suspended and pending members are context next to the count, never part of it. Active-status records without a package (leads, lapsed) are not members; quote them only as a labelled second number.
 - **Joins:** first membership purchase, not when the record was created. Name the definition used.
 - **Cancellations:** processed (cancellation date) and scheduled (notice given) are separate lines. A current Cancelled status alone doesn't mean they left this month.
 - **Churn:** only from `MembershipChurn`. Read [references/churn.md](references/churn.md) before writing the churn line or answering "what does provisional mean?".
-- **Trials:** package classification is set in Recovr (Settings > Packages). If any packages are unclassified ("other"), call the trial count a lower bound. Someone holding an intro offer alongside a membership has already converted.
+- **Trials:** package classification is set in Recovr (Settings > Packages). A package nobody classified counts as no type, so if any exist, call the trial count a lower bound. Someone holding an intro offer alongside a membership has already converted.
 
 ## 4. When the user's number differs
 

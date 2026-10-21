@@ -21,11 +21,11 @@ Most disagreements about a list are about who counts. Agree the definition, pull
 
 Ask once, in one message, only about what the request leaves open:
 
-- **Packages:** memberships only, or any current package? Trial passes and class packs are current packages too.
+- **Packages:** memberships only, or any current package? Trial passes and class packs are current packages too (`package_type`: membership, intro, class_pack, other).
 - **Status:** Active only? Include Suspended or pending memberships?
-- **Leave out:** staff, ambassador or $0 packages? Members whose package is hidden from reports (they come back flagged)?
+- **Leave out:** staff, ambassador or $0 packages? Members whose packages are all hidden from reports? Plain lists include them (rows show `shown_in_reports: false`); risk lists leave them out unless you set `include_hidden_from_reports`.
 - **Snoozed:** included and marked unless the user says otherwise.
-- **Labels, risk, coach, seller, attendance window**, if relevant.
+- **Labels** (`labels`, `exclude_labels`), **risk, coach, seller, attendance window**, if relevant.
 
 A member, by default, is Active status with a current package. Then restate the cohort as a block at the top of the answer, with relative windows resolved from `studio_today`:
 
@@ -40,16 +40,16 @@ For how to express common cohorts (lapsed, coach's clients, packages bought, bir
 
 ## 2. Pull every match
 
-- Page through `recovr_find_clients` until you hold every match, and report "N of N". If you stop early, say how many are missing.
+- Page through `recovr_find_clients`, passing each `next_offset` back as `offset`, until no `next_offset` comes back. Report "N of N". If you stop early, say how many are missing.
 - When `total_is_exact` is false, the total is a lower bound. Say so.
 - When a part of the definition can't be filtered (for example $0 packages), say so, show how many rows it affects, and let the user decide.
-- Check the count against `recovr_get_retention_summary`. When it differs from `active_members` or a band count, show the parts of `members_breakdown` that explain it.
+- Check the count against `recovr_get_retention_summary`. When it differs from `active_members` or a band count, show the parts of `members_breakdown` that explain it. Suspended and pending members are context next to the count, not part of it.
 
 ## 3. Return what they asked for
 
 - The columns the user named, in their order. A column the data doesn't have is left out and named, never estimated.
 - Fetch per-member detail with `recovr_get_client` only for a column that needs it, and warn first when that means many calls.
-- Mark snoozed members, members on hidden packages and flagged members.
+- Mark snoozed members, members whose packages are hidden from reports (`shown_in_reports: false`) and flagged members.
 - Offer a CSV or spreadsheet. The host makes the file; include every row and put the cohort line above the header.
 
 ## 4. Hand off

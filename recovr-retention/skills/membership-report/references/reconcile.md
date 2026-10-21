@@ -3,9 +3,9 @@
 Staff compare Recovr's number with Mindbody, Hapana, GymMaster or similar, and are often right about their own gym. Reproduce their number from parts rather than defending Recovr's.
 
 1. Ask for their number and what it counts, if they haven't said.
-2. Lay out `active_members` and each part of `members_breakdown`: memberships, suspended, staff or $0, pending, hidden from reports. Add or remove parts until you match their definition, and show the arithmetic.
+2. Lay out `active_members` and each part of `members_breakdown` as returned: memberships, staff or $0, hidden from reports, and, as context outside the count, suspended and pending. Add or remove parts until you match their definition, and show the arithmetic.
 3. Other common causes:
-   - packages classified differently in Recovr (Settings > Packages), including unclassified "other";
+   - packages classified differently in Recovr (Settings > Packages), or not classified at all;
    - history from before the gym's data reached Recovr (lifetime visits, old joins);
    - sync lag: Recovr's data is synced, not live.
 4. For a named counter-example ("she has a 6-month membership", "he's done 134 classes"), look that member up with `recovr_get_client` and report what Recovr holds.
