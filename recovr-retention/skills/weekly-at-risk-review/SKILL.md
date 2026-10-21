@@ -35,7 +35,7 @@ Copy this checklist and tick it off:
 
 **2. Owed a reply.** `recovr_list_conversations` with `filter: "reply_owed"`, with a `limit` large enough for the week (up to 100). When `has_more` is still true, say the section is partial; the tool has no next page to read. These members wrote and are waiting. Put them in their own section, first, and say they are owed an answer, not necessarily at risk.
 
-**3. Next Up.** Call `recovr_get_next_up`, Recovr's ranked list of who to reach out to and why. Its owed-a-reply cards join step 2's section; the rest form the start of the plan. If the tool isn't available, or it says Next Up is off for this studio, skip to step 4 and say the list was built from risk bands instead.
+**3. Next Up.** Call `recovr_get_next_up`, Recovr's ranked list of who to reach out to and why. Its `owed_reply` people join step 2's section. `reach_out` starts the plan in queue order: use each person's `why` and `moment` as the reason, and `risk` and `last_seen` as context. Due `reminders` (with `due_at`) go in their own line. Leave out anyone in `sent_today`, who has already been contacted from Next Up today. Quote `totals` for how many are in each group; when `incomplete` is true, call them a lower bound. If the tool isn't available, `enabled` is false (say its `message`), or `error` is set (the list is unavailable, not empty), skip to step 4 and say the list was built from risk bands instead.
 
 **4. Extra passes.** Run each; they catch people Next Up may not show.
 

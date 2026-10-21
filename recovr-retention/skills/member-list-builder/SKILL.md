@@ -25,7 +25,7 @@ Ask once, in one message, only about what the request leaves open:
 - **Status:** Active only? Include Suspended or pending memberships?
 - **Leave out:** staff, ambassador or $0 packages? Members whose packages are all hidden from reports? Plain lists include them (rows show `shown_in_reports: false`); risk lists leave them out unless you set `include_hidden_from_reports`.
 - **Snoozed:** included and marked unless the user says otherwise.
-- **Labels** (`labels`, `exclude_labels`), **risk, coach, seller, attendance window**, if relevant.
+- **Labels** (`labels`, `exclude_labels`), **risk, assigned coach (`assigned_to_user_id`), seller (`sold_by`), attendance window**, if relevant.
 
 A member, by default, is Active status with a current package. Then restate the cohort as a block at the top of the answer, with relative windows resolved from `studio_today`:
 
