@@ -33,7 +33,7 @@ Copy this checklist and tick it off:
 
 **1. Restate the review settings.** If the user has standing rules (labels to skip, their own band such as "medium under 60", a list size), restate them in one line at the top so next week's rerun is a single prompt. Frame the week from the summary's band counts, high risk first. Bands cover only members on packages shown in reports, so they can add up to less than `active_members`.
 
-**2. Owed a reply.** `recovr_list_conversations` with `filter: "reply_owed"`. These members wrote and are waiting. Put them in their own section, first, and say they are owed an answer, not necessarily at risk.
+**2. Owed a reply.** `recovr_list_conversations` with `filter: "reply_owed"`, reading further pages while `has_more` is true (or marking the section partial). These members wrote and are waiting. Put them in their own section, first, and say they are owed an answer, not necessarily at risk.
 
 **3. Next Up.** Call `recovr_get_next_up`, Recovr's ranked list of who to reach out to and why. Its owed-a-reply cards join step 2's section; the rest form the start of the plan. If the tool isn't available, or it says Next Up is off for this studio, skip to step 4 and say the list was built from risk bands instead.
 

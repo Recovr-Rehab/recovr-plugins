@@ -37,12 +37,12 @@ Membership report, September 2026 (memberships only; today is 21 Oct)
 Active members today   212   all current packages; on a membership: 188
                              (the 212 includes staff/$0 9, hidden from reports 13)
 Not counted, for context      suspended 9, pending 6
-Joins                   14   first membership purchased in September
-Cancellations           11   processed in September (by cancellation date)
+Joins                   14   first membership purchased in September (Oct to date: 6)
+Cancellations           11   processed in September (Oct to date: 4)
 Scheduled to end         5   notice given, end dates in Oct–Nov
 Churn, August         2.6%   7 of 270 at the start of the month (3 unverified)
 Churn, September         –   not established yet: 30-day return window still open
-Trials started          19   9 already on a membership
+Trials started          19   9 already on a membership (Oct to date: 8 started)
 ```
 
 - **Active members:** Active status and a current package. Show each part of `members_breakdown` as returned. Suspended and pending members are context next to the count, never part of it. Active-status records without a package (leads, lapsed) are not members; quote them only as a labelled second number.

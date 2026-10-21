@@ -16,7 +16,8 @@ A message works when it sounds like someone at the gym who knows the member wrot
 
 | What the record shows | What the message does |
 | --- | --- |
-| Non-intro package genuinely ending (no auto-renewal behind it) while still attending | Makes renewing easy. Admin, not persuasion. A billing date on an auto-renewing membership needs no message. |
+| Renewal: a non-intro package ending within 7 days, nothing auto-renewing behind it, no intro period overlapping it, and not a New member's first pack | Makes renewing easy. Admin, not persuasion. A billing date on an auto-renewing membership needs no message. |
+| A New member's first pack running out | Onboarding: help them settle into a routine. Never a renewal ask. |
 | Intro or trial ending | Conversion: what joining looks like for them. Not a renewal. |
 | Visits faded over weeks | Asks an open question; you don't know the reason. |
 | Stopped suddenly after regular visits | Warm and brief. No selling. |

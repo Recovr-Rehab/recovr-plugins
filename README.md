@@ -17,8 +17,8 @@ One folder serves every client:
 
 ## Releasing
 
-Raise `version` in all three plugin manifests together (`.claude-plugin/plugin.json`, `plugin.json`,
-`.grok-plugin/plugin.json`) with every release. The Claude directory and the xAI catalog bot follow this
+Raise `version` in all three plugin manifests together (`recovr-retention/.claude-plugin/plugin.json`,
+`recovr-retention/plugin.json`, `recovr-retention/.grok-plugin/plugin.json`) with every release. The Claude directory and the xAI catalog bot follow this
 repository's default branch, so every merge to `main` is a release candidate. A ChatGPT release is a new
 ZIP (built by `store-listing/openai/build-zip.sh` in the Retention repository) and a new OpenAI review.
 
@@ -29,7 +29,8 @@ the membership report, timetable review, session prep, messaging and follow-up a
 
 Every skill starts with the same ground rules. Edit them once in `shared/ground-rules.md`, then run
 `node scripts/sync-ground-rules.mjs` to copy them into each `SKILL.md`. `node scripts/sync-ground-rules.mjs --check`
-fails if a skill is out of date or names a tool the Recovr MCP server doesn't publish. Hosts other than Claude Code
+fails if a skill's rules are out of date or a skill names a tool missing from the script's maintained tool list. It
+doesn't contact the server: checking the list against the live catalogue is a separate release step (below). Hosts other than Claude Code
 can't read files outside a skill's own folder, so the rules are copied in rather than linked.
 
 Detail that only some requests need lives in a skill's `references/` folder, one level below its `SKILL.md`.

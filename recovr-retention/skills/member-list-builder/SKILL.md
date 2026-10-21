@@ -40,8 +40,7 @@ For how to express common cohorts (lapsed, coach's clients, packages bought, bir
 
 ## 2. Pull every match
 
-- Page through `recovr_find_clients`, passing each `next_offset` back as `offset`, until no `next_offset` comes back. Report "N of N". If you stop early, say how many are missing.
-- When `total_is_exact` is false, the total is a lower bound. Say so.
+- Page through `recovr_find_clients`, passing each `next_offset` back as `offset`, until no `next_offset` comes back. Report "N of N" only when `total_is_exact` is true; otherwise report "N of at least M". If you stop early, say so and give the shortfall as a minimum, not an exact number.
 - When a part of the definition can't be filtered (for example $0 packages), say so, show how many rows it affects, and let the user decide.
 - Check the count against `recovr_get_retention_summary`. When it differs from `active_members` or a band count, show the parts of `members_breakdown` that explain it. Suspended and pending members are context next to the count, not part of it.
 

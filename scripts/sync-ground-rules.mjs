@@ -33,7 +33,7 @@ for (const name of readdirSync(skillsDir)) {
   const text = readFileSync(file, "utf8");
   const s = text.indexOf("<!-- ground-rules:start");
   const e = text.indexOf(END);
-  if (s < 0 || e < 0) { console.error(`${name}: ground-rules markers missing`); problems++; continue; }
+  if (s < 0 || e < 0 || e < s) { console.error(`${name}: ground-rules markers missing or out of order`); problems++; continue; }
   const next = text.slice(0, s) + block + text.slice(e + END.length);
   if (next !== text) {
     if (check) { console.error(`${name}: ground rules out of date`); problems++; }
@@ -41,7 +41,7 @@ for (const name of readdirSync(skillsDir)) {
   }
   const md = [file, ...(existsSync(join(dir, "references")) ? readdirSync(join(dir, "references")).map((f) => join(dir, "references", f)) : [])];
   for (const f of md) {
-    for (const m of readFileSync(f, "utf8").matchAll(/\brecovr_[a-z_]+\b/g)) {
+    for (const m of readFileSync(f, "utf8").matchAll(/\brecovr_[a-z0-9_]+\b/g)) {
       if (!TOOLS.has(m[0])) { console.error(`${f.slice(root.length + 1)}: unknown tool ${m[0]}`); problems++; }
     }
   }

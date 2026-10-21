@@ -12,7 +12,7 @@ How common staff requests map to Recovr. `recovr_find_clients` handles current-s
 | "Who bought a 3, 5 or 10-pack in the last 30 days" | Package sales for the period, or the package-purchase recipe in `query_guide`. |
 | "High risk plus medium under 60, minus these labels" | Two `recovr_find_clients` calls (high-risk; medium-risk) with `exclude_labels`, then keep medium rows scoring under 60. Name it as the gym's own band. |
 | "Whose birthday is today / this week" | Birthday recipe in `query_guide`. |
-| "Who hit 100 classes this week", "who's close to 200" | Milestone recipe in `query_guide`. Lifetime counts can miss visits from before the gym's history reached Recovr; say so. |
+| "Who hit 100 classes this week", "who's close to 200" | Milestone recipe in `query_guide`. If the recipe gives lifetime counts but not the date a milestone was crossed, list members at or just past the number and say the week can't be confirmed. Lifetime counts can miss visits from before the gym's history reached Recovr; say so. |
 | "Joined last week", "week 8 of their first contract" | Join or first-membership date recipe. Tenure counts from when they started, not from the current billing cycle's purchase date. |
 | "Trials ending this week", "trialists with nothing booked" | Trial pipeline recipe, or `risk: "conversion"`. A long-standing member who buys an intro offer is not a new trialist. |
 | "Who has a knee note" | Member-notes recipe (it searches both note stores). |
