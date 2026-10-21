@@ -8,8 +8,8 @@
     {
       "name": "recovr-retention",
       "source": "./recovr-retention",
-      "description": "Find gym members at risk of cancelling, read their attendance and conversations, and act on them from Claude."
+      "description": "Spot gym members at risk of cancelling, build member lists, report membership numbers and churn, prep class huddles, and plan personal follow-up from your Recovr account."
     }
   ],
-  "description": "Recovr plugins for Claude: gym client-retention workflows backed by your Recovr account."
+  "description": "Recovr plugins for Claude: gym member-retention skills backed by your Recovr account."
 }

@@ -1,0 +1,10 @@
+{
+  "name": "recovr-retention",
+  "version": "1.5.0",
+  "description": "Help gym and studio teams spot members at risk of cancelling, build member lists, report membership numbers and churn, prep class huddles, and plan personal follow-up using their existing Recovr data.",
+  "author": { "name": "Recovr Pty Ltd", "url": "https://recovr.com" },
+  "homepage": "https://retention.recovr.com/mcp",
+  "repository": "https://github.com/Recovr-Rehab/recovr-plugins",
+  "license": "UNLICENSED",
+  "keywords": ["recovr", "recovr retention", "recovr mcp"]
+}
